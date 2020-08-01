@@ -1,0 +1,67 @@
+<html>
+<head><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <title>TConverter</title>
+    <style>
+    img
+    {
+    border-radius:50%;
+        width: 170 ; max-width: 100% ; height: 170;
+    }
+    
+    
+    </style>
+    </head>
+    
+    <script>
+        
+    function fc()
+        {
+            var x=document.getElementById("id1").value;
+            
+            y=(x-32)/1.8;
+            
+            document.getElementById("id2").value=y;
+        }
+        
+    function cf()
+        {
+            var x=document.getElementById("id1").value;
+            y=(x*1.8)+32;
+            
+            document.getElementById("id2").value=y;
+        }
+        
+        function del()
+        {
+            document.getElementById("id1").value=null;
+            document.getElementById("id2").value="";
+        }
+    
+    
+    
+    </script>
+    
+    <body style="background-image: url('tt.jpg');background-size:cover"><center>
+        
+        <img src="Tpic.jpg"><br><br><br>
+        
+        <label style="font-family: fantasy; font-size: 35;color: aliceblue">Fahrenheit</label> &nbsp;&nbsp;
+        <input id="id1" style="font-size: 25;font-family: serif" placeholder="fahrenheit">
+        <br><br><br>
+        
+        
+        <button onclick="fc()" style="font-size: 25;font-family: serif;cursor: pointer;border-radius: 12px;margin-right:15px">Convert F-C</button>
+        
+        
+        <button onclick="cf()" style="font-size: 25;font-family: serif;cursor: pointer;border-radius: 12px;margin-right: 15px">Convert C-F</button><br><br>
+        <button onclick="del()" style="font-size: 25;font-family: serif;cursor: pointer;border-radius: 12px">Delete</button>
+        <br><br><br>
+        
+        <label style="font-family: fantasy; font-size: 35;color: aliceblue">Celsius</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="id2" style="font-size: 25;font-family: serif"placeholder="celcius">
+                
+        </center>
+     
+    </body>
+</html>

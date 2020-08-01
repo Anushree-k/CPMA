@@ -1,0 +1,73 @@
+<html>
+    <head ><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arithmatic</title>
+</head>
+    <h1 style="font-size: 40;color:darkgreen;font-family:fantasy"><center>Arithematic Operations</center></h1>
+    <script>
+    function add()
+        {
+            var a=document.getElementById("id1").value;
+            var b=document.getElementById("id2").value;
+            
+            var c=parseInt(a)+parseInt(b);
+            
+            alert("Addition "+c)
+            
+        }
+    
+        function sub()
+        {
+            var a=document.getElementById("id1").value;
+            var b=document.getElementById("id2").value;
+            
+            var c=parseInt(a)-parseInt(b);
+            
+            alert("Subtraction "+c)
+            
+        }
+        
+        function pro()
+        {
+            var a=document.getElementById("id1").value;
+            var b=document.getElementById("id2").value;
+            
+            var c=parseInt(a)*parseInt(b);
+            
+            alert("Product "+c)
+            
+        }
+        
+        function div()
+        {
+            var a=document.getElementById("id1").value;
+            var b=document.getElementById("id2").value;
+            
+            var c=parseInt(a)/parseInt(b);
+            
+            alert("Division "+c)
+            
+        }       
+    
+    </script>
+    <body style="background-image:url('math.jpg');"><center>
+    
+        <p style="font-size:30">Enter first number <input id="id1" type="text" style="font-size: 20;background-color: antiquewhite;font-family: inherit"> </p>
+        
+        
+    <p style=font-size:30>Enter second number <input id="id2" type="text" style="font-size: 20;background-color: antiquewhite;font-family: inherit"></p>
+        
+        <br>
+        <button onclick="add()" style="font-size: 20;border-top-color: forestgreen;font-family:inherit;cursor: pointer">Add</button><br><br>
+        
+        <button onclick="sub()"style="font-size: 20;border-top-color: forestgreen;font-family:inherit;cursor: pointer">Sub</button><br><br>
+        
+        <button onclick="pro()"style="font-size: 20;border-top-color: forestgreen;font-family:inherit;cursor: pointer">Product</button><br><br>
+        
+        <button onclick="div()"style="font-size: 20;border-top-color: forestgreen;font-family:inherit;cursor: pointer">Division</button>
+        
+        </center>
+    </body>
+    
+
+
+</html>

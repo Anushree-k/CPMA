@@ -1,0 +1,70 @@
+<html>
+<head><meta name="viewport" content="width=device-width">
+    <title>Currency Converter</title>
+    <style>
+    img
+    {
+    border-radius:10%;
+        width: auto ;
+height: auto ;
+    }
+    
+    
+    </style>
+    </head>
+    
+    <script>
+    function abc()
+        {
+            var x=document.getElementById("id1").value;
+            var y=document.getElementById("s1").value;
+         
+            if(y=="d")
+                {
+                    document.getElementById("id2").value=x*71.65;
+                }
+           else if(y=="e")
+                {
+                    document.getElementById("id2").value=x*79.76;
+                }
+            
+          else if(y=="p")
+                {
+                    document.getElementById("id2").value=x*88.01;
+                }
+            
+           else if(y=="y")
+                {
+                    document.getElementById("id2").value=x*0.67;
+                }
+        }
+    
+    </script>
+    
+    <body style="background-image: url(back1.gif); background-size: cover"><center>
+        <br>
+        <img src="cicon.png">
+<br><br><br><br><br><br>             
+    <label style="font-family: serif; font-size: 35;color: azure;margin-right: 20px">Enter value to convert</label>
+        
+        <input id="id1" type="text" style="font-size: 25;font-family: serif;background-color: lightgrey"><br><br>
+        
+        <label style="font-family: serif; font-size: 35;color: azure;margin-right: 20px">Select currency</label>
+        
+        <select id="s1" onclick="abc()" style="font-size: 25;font-family: serif;background-color: lightgrey">
+            
+          <option></option>  
+        <option value="d">Dollar</option>
+        <option value="e">Euro</option>
+        <option value="p">Pound</option> 
+        <option value="y">Yen</option>
+                
+        </select><br><br>
+        
+        <label style="font-family: serif; font-size: 35;color: azure;margin-right: 20px">Currency value in INR</label>
+        
+        <input id="id2" type="text" style="font-size: 25;font-family: serif;background-color: lightgrey" disabled>
+        
+    </center>
+    </body>
+</html>
